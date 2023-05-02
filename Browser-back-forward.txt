@@ -1,0 +1,18 @@
+
+Browser Back/Forward
+
+Design how you could design a browser back/forward system using two stacks,
+so that you can visit a series of sites (Google, Yahoo, EBay, go back to
+Yahoo, then forward again to EBay, then onto Apple, and so on).
+
+Write pseudo-code for this.
+
+
+Two stacks:  Backward and Forward
+
+When both are empty, the first site visited gets added to Backwards
+Each subsequent visit to a new site gets added to Backwards.
+When "Back" is clicked in the browser, pop() is called on the Backward stack
+and the returned value is pushed to the Forward stack.
+When "Forward" is clicked in the browser, pop() is called on the Forward stack
+and the returned value is pushed to the Backward stack.
